@@ -9,7 +9,7 @@ import re, urllib.request
 
 CANDIDATES = {
     'GSE195452': 'Gur 2022 Cell, LGR5 fibroblast hub. Believed scRNA + CITE-seq.',
-    'GSE312129': 'JCI Insight 2025 (PMID 41411065). PAIRED snRNA + snATAC multiome, '
+    'GSE312129': 'JCI Insight 2026 (PMID 41411065). PAIRED snRNA + snATAC multiome, '
                  '10 dcSSc vs 4 HC, lesional forearm.',
     'GSE312932': 'Same study, spatial arm.',
     'GSE99702' : 'Liu 2020 Nat Commun. BULK ATAC on sorted skin cell types.',

@@ -8,9 +8,9 @@ date: "10 September 2026"
 
 ## Summary
 
-GSE312129 is the single nuclei multiome arm of a 2025 study of early, treatment naive
+GSE312129 is the single nuclei multiome arm of a 2026 study of early, treatment naive
 diffuse cutaneous systemic sclerosis skin, ten patients and four healthy controls,
-lesional forearm punch biopsy (Ashton et al., JCI Insight, PMID 41411065).
+lesional forearm punch biopsy (Jarnagin et al., JCI Insight 2026;11(3):e198954, PMID 41411065).
 
 Reprocessing all fourteen samples from the deposited filtered matrices with one fixed
 labeling rule finds that **fibroblast nuclei are recovered from SSc skin at roughly one
@@ -144,9 +144,11 @@ with the disease.
 
 ## References
 
-Ashton et al. Multimodal analyses of early, untreated systemic sclerosis skin identify a
-proinflammatory vascular niche of macrophage-fibroblast signaling. JCI Insight, 2025.
-PMID 41411065.
+Jarnagin HC, Parvizi R, Gong Z, Gedert R, Xing X, Tsoi LC, Bogle R, Morrisson MJ,
+Perreard L, Pioli PA, Kolling F 4th, Gudjonsson JE, Khanna D, Whitfield ML. Multimodal
+analyses of early, untreated systemic sclerosis skin identify a proinflammatory vascular
+niche of macrophage-fibroblast signaling. JCI Insight. 2026;11(3):e198954.
+doi:10.1172/jci.insight.198954. PMID 41411065.
 
 Denisenko E, Guo BB, Jones M, et al. Systematic assessment of tissue dissociation and
 storage biases in single-cell and single-nucleus RNA-seq workflows. Genome Biology
