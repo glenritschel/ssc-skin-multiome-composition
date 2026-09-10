@@ -11,6 +11,13 @@ authors:
 date-released: 2026-09-10
 license: MIT
 repository-code: "https://github.com/glenritschel/ssc-skin-multiome-composition"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.22693563"
+    description: "Concept DOI, resolves to the latest version of the deposited note"
+  - type: doi
+    value: "10.5281/zenodo.22693564"
+    description: "Version DOI, v1"
 keywords:
   - systemic sclerosis
   - scleroderma
@@ -29,13 +36,20 @@ abstract: >-
   complete record of the preregistered RUNX paralog analysis that did not
   reach its donor floor and was stopped.
 references:
-  - type: software
-    title: "Working method for human-authored, model-drafted research output, v1.1"
+  - type: article
+    title: "Multimodal analyses of early, untreated systemic sclerosis skin identify a proinflammatory vascular niche of macrophage-fibroblast signaling"
     authors:
-      - family-names: Ritschel
-        given-names: Glen
-        orcid: "https://orcid.org/0009-0006-5341-8840"
-    doi: "10.5281/zenodo.22036802"
+      - family-names: Jarnagin
+        given-names: Helen C.
+      - family-names: Whitfield
+        given-names: Michael L.
+    journal: "JCI Insight"
+    year: 2026
+    volume: 11
+    issue: 3
+    doi: "10.1172/jci.insight.198954"
 notes: >-
-  Author order and creator format match the Ritschel Research house convention used
-  across its Zenodo deposits.
+  Creator format follows the Ritschel Research convention for research deposits:
+  the author, then Claude (Anthropic). The books convention is different and does
+  not apply here.
+
