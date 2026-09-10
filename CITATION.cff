@@ -3,9 +3,11 @@ message: "If you use this software or its findings, please cite it as below."
 title: "ssc-skin-multiome-composition: fibroblast recovery asymmetry in GSE312129"
 authors:
   - family-names: Ritschel
-    given-names: Glen
+    given-names: Glen Charles
     orcid: "https://orcid.org/0009-0006-5341-8840"
-    affiliation: "Ritschel Research (a DBA of Ritschel Ventures LLC)"
+    affiliation: "Ritschel Research"
+  - name: "Claude"
+    affiliation: "Anthropic"
 date-released: 2026-09-10
 license: MIT
 repository-code: "https://github.com/glenritschel/ssc-skin-multiome-composition"
@@ -35,5 +37,5 @@ references:
         orcid: "https://orcid.org/0009-0006-5341-8840"
     doi: "10.5281/zenodo.22036802"
 notes: >-
-  Written with Claude (Anthropic). Sole authorship and sole accountability rest with
-  the named author, per the working method cited above.
+  Author order and creator format match the Ritschel Research house convention used
+  across its Zenodo deposits.

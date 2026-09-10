@@ -1,6 +1,8 @@
 ---
 title: "Systemic sclerosis skin yields six times fewer fibroblast nuclei than healthy skin in the only public paired multiome of SSc skin, and that asymmetry sits underneath every between group claim drawn from it"
-author: "Glen Ritschel, Ritschel Research (a DBA of Ritschel Ventures LLC), ORCID 0009-0006-5341-8840"
+author:
+  - Glen Charles Ritschel (Ritschel Research, ORCID 0009-0006-5341-8840)
+  - Claude (Anthropic)
 date: "10 September 2026"
 ---
 
@@ -125,15 +127,20 @@ The labeling audit that produces the table and figure above is a single script o
 only on the deposited filtered matrices. No fragment files, no reference genome and no
 motif database are required to reproduce it.
 
-## Acknowledgment
+## Conflict of interest
 
-Written with Claude (Anthropic).
+GCR is an independent researcher who has filed provisional patent applications relating
+to cell-state-based patient stratification in fibrotic disease, including systemic
+sclerosis. **Those filings claim host cell-state measurement. This note reports a sample
+recovery artifact in a public dataset and claims no marker, no method, no compound and no
+indication; nothing reported here is claimed in them, and nothing here is offered in
+support of any filing.**
 
-Authorship follows the working method published at
-https://doi.org/10.5281/zenodo.22036802 (concept DOI): the author gives intent,
-validates every claim, and holds sole authorship and sole accountability; the model
-drafts. Nothing here shipped without being read at full length by the author, and
-errors are published rather than quietly fixed.
+The authors have no relationship with the authors of the study whose dataset is
+reanalyzed here, and no access to it beyond the public deposit.
+
+GCR's research interest in systemic sclerosis is personally motivated by a family member
+with the disease.
 
 ## References
 

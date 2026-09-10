@@ -115,20 +115,16 @@ run time.
 
 See `CITATION.cff`.
 
-## Acknowledgment
+## Authorship
 
-Written with Claude (Anthropic).
+Glen Charles Ritschel (Ritschel Research, ORCID 0009-0006-5341-8840) and Claude (Anthropic).
 
-Authorship follows the working method published at
-https://doi.org/10.5281/zenodo.22036802 (concept DOI): a human author gives intent,
-validates every claim, and takes sole authorship and sole accountability; the model
-drafts. Nothing in this repository shipped without being read at full length by the
-author. Errors are published rather than quietly fixed, which is why `docs/findings/`
-contains a bug report and a stop record rather than only results.
+GCR conceived and directed the work, validated every claim in it, and made every decision
+recorded in `docs/`. Claude drafted the code and the prose. Author order and creator format
+match the house convention used across the Ritschel Research Zenodo deposits.
 
-Git commit trailers in this repository additionally record model co-authorship of
-specific commits. That is a provenance record of who typed what, not a claim of
-authorship over the work.
+Errors are published rather than quietly fixed, which is why `docs/findings/` contains a bug
+report and a stop record rather than only results.
 
 ## License
 
