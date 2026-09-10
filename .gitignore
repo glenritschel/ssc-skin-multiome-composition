@@ -1,0 +1,11 @@
+*.h5
+*.tsv.gz
+*.fa
+*.fa.gz
+ck_*.json
+run_*.log
+combined_results.csv
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+.DS_Store

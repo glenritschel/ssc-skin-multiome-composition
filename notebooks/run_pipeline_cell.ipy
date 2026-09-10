@@ -1,0 +1,30 @@
+# ONE Colab cell. Sets up, then runs the pipeline as a separate process.
+import os, hashlib
+from google.colab import drive
+drive.mount('/content/drive', force_remount=False)
+
+WORK  = '/content/drive/MyDrive/RR/runx_paralog'
+CACHE = '/content/drive/MyDrive/RR/_cache'
+os.makedirs(WORK, exist_ok=True); os.makedirs(CACHE, exist_ok=True)
+
+SCRIPT = f'{WORK}/runx_paralog_pipeline.py'
+if not os.path.exists(SCRIPT):
+    raise FileNotFoundError(
+        f'Upload runx_paralog_pipeline.py to {WORK} first (Drive web, or the Colab file '
+        'pane then copy it across). Do not paste it into a cell.')
+print('script sha256:', hashlib.sha256(open(SCRIPT,'rb').read()).hexdigest()[:16])
+
+!pip -q install scanpy anndata pyfaidx pyjaspar MOODS-python 2>&1 | tail -2
+
+FA = f'{CACHE}/hg38.fa'
+if not os.path.exists(FA):
+    print('downloading hg38, one time, several minutes, ~3 GB uncompressed')
+    !wget -q -O {CACHE}/hg38.fa.gz https://hgdownload.soe.ucsc.edu/goldenPath/hg38/bigZips/hg38.fa.gz
+    !gunzip -f {CACHE}/hg38.fa.gz
+print('hg38:', f'{os.path.getsize(FA)/1e9:.2f} GB')
+
+# START WITH ONE DONOR. Drop --only once SSC1 completes and the controls behave.
+import datetime
+LOG = f'{WORK}/run_{datetime.datetime.now():%Y%m%d_%H%M}.log'
+!python {SCRIPT} --work {WORK} --cache {CACHE} --only SSC1 2>&1 | tee {LOG}
+print('\nlog:', LOG)

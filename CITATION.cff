@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+message: "If you use this software or its findings, please cite it as below."
+title: "ssc-skin-multiome-composition: fibroblast recovery asymmetry in GSE312129"
+authors:
+  - family-names: Ritschel
+    given-names: Glen
+    orcid: "https://orcid.org/0009-0006-5341-8840"
+    affiliation: "Ritschel Research (a DBA of Ritschel Ventures LLC)"
+date-released: 2026-09-10
+license: MIT
+repository-code: "https://github.com/glenritschel/ssc-skin-multiome-composition"
+keywords:
+  - systemic sclerosis
+  - scleroderma
+  - single nuclei multiome
+  - snATAC-seq
+  - dissociation bias
+  - cell type composition
+  - GSE312129
+abstract: >-
+  Reprocessing of GSE312129 finds that fibroblast nuclei are recovered from
+  systemic sclerosis skin at roughly one sixth the rate of healthy skin
+  (median 6.1 versus 38.3 percent of quality controlled nuclei, exact
+  Mann-Whitney p = 0.014), in the direction opposite to the disease. The
+  asymmetry is corroborated by COL1A1 detection and is a composition confound
+  for between group comparisons drawn from this dataset. Also included is the
+  complete record of the preregistered RUNX paralog analysis that did not
+  reach its donor floor and was stopped.
+references:
+  - type: software
+    title: "Working method for human-authored, model-drafted research output, v1.1"
+    authors:
+      - family-names: Ritschel
+        given-names: Glen
+        orcid: "https://orcid.org/0009-0006-5341-8840"
+    doi: "10.5281/zenodo.22036802"
+notes: >-
+  Written with Claude (Anthropic). Sole authorship and sole accountability rest with
+  the named author, per the working method cited above.
