@@ -16,8 +16,8 @@ identifiers:
     value: "10.5281/zenodo.22693563"
     description: "Concept DOI, resolves to the latest version of the deposited note"
   - type: doi
-    value: "10.5281/zenodo.22693564"
-    description: "Version DOI, v1"
+    value: "10.5281/zenodo.22714302"
+    description: "Version DOI, v3"
 keywords:
   - systemic sclerosis
   - scleroderma
@@ -35,20 +35,4 @@ abstract: >-
   for between group comparisons drawn from this dataset. Also included is the
   complete record of the preregistered RUNX paralog analysis that did not
   reach its donor floor and was stopped.
-references:
-  - type: article
-    title: "Multimodal analyses of early, untreated systemic sclerosis skin identify a proinflammatory vascular niche of macrophage-fibroblast signaling"
-    authors:
-      - family-names: Jarnagin
-        given-names: Helen C.
-      - family-names: Whitfield
-        given-names: Michael L.
-    journal: "JCI Insight"
-    year: 2026
-    volume: 11
-    issue: 3
-    doi: "10.1172/jci.insight.198954"
-notes: >-
-  Creator format follows the Ritschel Research convention for research deposits:
-  the author, then Claude (Anthropic). The books convention is different and does
-  not apply here.
+
