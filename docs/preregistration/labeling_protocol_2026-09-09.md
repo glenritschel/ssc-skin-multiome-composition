@@ -172,14 +172,20 @@ not downloaded.
 
 Nothing is downloaded in bulk before step 1 answers.
 
-
 ---
 
 # 9. Deviations and prespecified-check reporting
 
-**Added 2026-09-15**, after deposit of the composition note
-(concept DOI 10.5281/zenodo.22693563, current version 10.5281/zenodo.22714302, v3).
-Appended so that sections 0 through 8 remain the document as fixed on 2026-09-09.
+**Checks computed 2026-09-13. Appended to this document 2026-09-15.** After deposit of the
+composition note (concept DOI 10.5281/zenodo.22693563, current version
+10.5281/zenodo.22714302, v3). Appended so that sections 0 through 8 remain the document as
+fixed on 2026-09-09.
+
+The checks below were recomputed by re-running the labeling rule of sections 2 and 3
+unchanged. That re-run reproduces every fibroblast count in the deposited note as an
+identical integer and every donor's fibroblast share to within 0.04 percentage points,
+so what follows is the record of what the deposited run computed, not a later
+measurement reported in its place.
 
 ## 9.1 Deviation: the mitochondrial threshold moved from 5 percent to 20 percent
 
@@ -205,24 +211,62 @@ conditions. The composition note reports none of them by name. They are reported
 
 | prespecified check | where fixed | result |
 |---|---|---|
-| Ambiguous count per donor | sec 3.5 | FILL |
-| Ambiguous fraction above 40 percent fails that donor | sec 4 | FILL |
-| Detection sanity: at least 30 percent of **called fibroblasts** carry nonzero COL1A1 or PDGFRA | sec 4 | FILL |
-| Keratinocyte share: fibroblasts outnumbering keratinocytes more than tenfold | sec 4 | FILL |
-| Fibroblast nuclei per donor, floor of 200 | sec 4 | FILL |
-| Donors surviving the floor, minimum of 6 | sec 4 | FILL |
-| Paralog detectability floor, 5 percent of a donor's fibroblast nuclei | sec 5 | NOT RUN; the study stopped at the donor floor first |
+| Ambiguous count per donor | sec 3.5 | REPORTED, per-donor table below. 4 to 346 nuclei, 1.0 to 5.1 percent of QC nuclei. |
+| Ambiguous fraction above 40 percent fails that donor | sec 4 | PASSES, 0 of 14 donors fail. Highest observed 5.1 percent. |
+| Detection sanity: at least 30 percent of **called fibroblasts** carry nonzero COL1A1 or PDGFRA | sec 4 | PASSES, 0 of 14 donors fail. Range 83.3 to 100 percent. Two cells are low-n and are marked below. |
+| Keratinocyte share: fibroblasts outnumbering keratinocytes more than tenfold | sec 4 | PASSES, 0 of 14 donors fail — vacuously. See 9.4. |
+| Fibroblast nuclei per donor, floor of 200 | sec 4 | **FAILS on five of ten dcSSc donors.** SSC3, SSC4, SSC6, SSC7, SSC8. |
+| Donors surviving the floor, minimum of six | sec 4 | **FAILS.** Five of ten dcSSc donors survive. This is the failure that stopped the study. |
+| Paralog detectability floor, 5 percent of a donor's fibroblast nuclei | sec 5 | NOT RUN; the study stopped at the donor floor first. |
 
-**If a check was never computed, its cell reads NOT RUN.** Reporting a prespecified check as
-not run is survivable. Leaving it unreported implies it passed.
+| donor | QC nuclei | ambiguous | ambiguous % | called fibroblasts | COL1A1 or PDGFRA in called fibroblasts | keratinocyte nuclei | fibroblast : keratinocyte |
+|---|---|---|---|---|---|---|---|
+| SSC1 | 5,761 | 251 | 4.4% | 1,296 | 98.7% | 2,139 | 0.61 |
+| SSC2 | 3,444 | 90 | 2.6% | 274 | 100.0% | 1,035 | 0.27 |
+| SSC3 | 2,269 | 31 | 1.4% | 139 | 97.1% | 1,958 | 0.07 |
+| SSC4 | 2,760 | 33 | 1.2% | 5 | **100.0% (n = 5, not interpretable)** | 2,359 | 0.00 |
+| SSC5 | 3,820 | 106 | 2.8% | 572 | 95.5% | 2,000 | 0.29 |
+| SSC6 | 1,880 | 19 | 1.0% | 12 | **83.3% (n = 12, not interpretable)** | 1,551 | 0.01 |
+| SSC7 | 267 | 4 | 1.5% | 89 | 98.9% | 48 | 1.85 |
+| SSC8 | 2,801 | 45 | 1.6% | 170 | 95.3% | 1,830 | 0.09 |
+| SSC9 | 6,835 | 346 | 5.1% | 419 | 93.6% | 3,775 | 0.11 |
+| SSC10 | 5,000 | 204 | 4.1% | 239 | 99.6% | 3,752 | 0.06 |
+| HC1 | 4,662 | 135 | 2.9% | 3,435 | 99.5% | 870 | 3.95 |
+| HC2 | 3,993 | 190 | 4.8% | 2,061 | 97.2% | 1,171 | 1.76 |
+| HC3 | 5,684 | 249 | 4.4% | 1,423 | 95.8% | 3,207 | 0.44 |
+| HC4 | 5,923 | 268 | 4.5% | 1,027 | 96.1% | 2,472 | 0.41 |
 
-**A percentage computed over 5 or 12 called fibroblasts is arithmetic, not a check.** Any such
-cell is reported with its n and labeled as uninterpretable at that n.
+**A detection percentage computed over 5 or 12 called fibroblasts is arithmetic, not a
+check.** Those two cells carry their n and are not offered as evidence of anything.
 
-## 9.3 A referent correction that belongs here
+## 9.3 A referent correction, and it changes what a reader concludes
 
 The composition note's COL1A1 column is detection across **all QC nuclei**. The detection
 sanity check at section 4 is detection across **called fibroblasts**. These are different
-quantities. The note reports the first; the protocol prespecified the second. The column
-should be read, and in any future version labeled, as "COL1A1 detected, all QC nuclei."
+quantities and in this dataset they differ by more than twelvefold in the same donor:
+SSC4 is 7.9 percent by the first and 100 percent by the second.
+
+The consequence is not only that a prespecified check went unreported. A reader ticking
+section 4 off against the note's column would read 7.9 percent against a 30 percent
+threshold and conclude the check FAILED, when the check as written returns 100 percent.
+The note's column should be read, and in any future version labeled, as "COL1A1 detected,
+all QC nuclei."
+
+## 9.4 The keratinocyte-share check passed and could not have failed
+
+Section 4's keratinocyte condition is one-sided: it fires only if fibroblasts outnumber
+keratinocytes by more than tenfold. Observed ratios run 0.00 to 3.95, the maximum being a
+healthy control. No donor is within a factor of two and a half of the threshold, and the
+threshold sits on the side of 1.0 that this tissue never approaches.
+
+The check therefore passed on SSC4, a library that is 85 percent keratinocyte and yielded
+five fibroblast nuclei. It would have passed on a donor with no fibroblasts at all.
+
+What did catch that condition was the 200-nucleus per-donor floor and the six-donor study
+floor, both of which fired as written. Nothing was missed. But this check did no work, and
+recording it as "passed" without this paragraph would imply that it did.
+
+A check is stated with the direction its failure would come from. A one-sided check
+records the direction it cannot see. This one could not see the only direction the data
+went.
 
