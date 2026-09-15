@@ -171,3 +171,58 @@ not downloaded.
 4. Only then score motifs.
 
 Nothing is downloaded in bulk before step 1 answers.
+
+
+---
+
+# 9. Deviations and prespecified-check reporting
+
+**Added 2026-09-15**, after deposit of the composition note
+(concept DOI 10.5281/zenodo.22693563, current version 10.5281/zenodo.22714302, v3).
+Appended so that sections 0 through 8 remain the document as fixed on 2026-09-09.
+
+## 9.1 Deviation: the mitochondrial threshold moved from 5 percent to 20 percent
+
+Section 3.1 fixes the cut at 5 percent, on the reasoning that this is single nuclei data
+and high mitochondrial content indicates ambient contamination or damage.
+
+Applied to the first donor, the 5 percent cut discarded 87.3 percent of barcodes. The
+threshold was changed to 20 percent and all fourteen samples were processed under the
+single changed threshold. No sample was processed under both.
+
+The reasoning originally offered for the loss, that snRNA is shallow by construction, was
+wrong and is retracted: the median here is 1,851 genes per nucleus. The loss was caused by
+the mitochondrial cut itself.
+
+The composition note discloses the change in its Method section. This entry exists so that
+the protocol document, which is the document claiming things were fixed in advance, carries
+the record of what moved.
+
+## 9.2 Prespecified checks: what was run and what it returned
+
+Section 3.5 requires the ambiguous count per donor. Section 4 prespecifies five stop
+conditions. The composition note reports none of them by name. They are reported here.
+
+| prespecified check | where fixed | result |
+|---|---|---|
+| Ambiguous count per donor | sec 3.5 | FILL |
+| Ambiguous fraction above 40 percent fails that donor | sec 4 | FILL |
+| Detection sanity: at least 30 percent of **called fibroblasts** carry nonzero COL1A1 or PDGFRA | sec 4 | FILL |
+| Keratinocyte share: fibroblasts outnumbering keratinocytes more than tenfold | sec 4 | FILL |
+| Fibroblast nuclei per donor, floor of 200 | sec 4 | FILL |
+| Donors surviving the floor, minimum of 6 | sec 4 | FILL |
+| Paralog detectability floor, 5 percent of a donor's fibroblast nuclei | sec 5 | NOT RUN; the study stopped at the donor floor first |
+
+**If a check was never computed, its cell reads NOT RUN.** Reporting a prespecified check as
+not run is survivable. Leaving it unreported implies it passed.
+
+**A percentage computed over 5 or 12 called fibroblasts is arithmetic, not a check.** Any such
+cell is reported with its n and labeled as uninterpretable at that n.
+
+## 9.3 A referent correction that belongs here
+
+The composition note's COL1A1 column is detection across **all QC nuclei**. The detection
+sanity check at section 4 is detection across **called fibroblasts**. These are different
+quantities. The note reports the first; the protocol prespecified the second. The column
+should be read, and in any future version labeled, as "COL1A1 detected, all QC nuclei."
+

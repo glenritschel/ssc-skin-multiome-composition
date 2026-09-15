@@ -8,16 +8,16 @@ authors:
     affiliation: "Ritschel Research"
   - name: "Claude"
     affiliation: "Anthropic"
-date-released: 2026-09-10
+date-released: 2026-09-11
 license: MIT
 repository-code: "https://github.com/glenritschel/ssc-skin-multiome-composition"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.22693563"
-    description: "Concept DOI, resolves to the latest version of the deposited note"
+    description: "Concept DOI. Cite this one. Resolves to the latest version of the deposited note."
   - type: doi
     value: "10.5281/zenodo.22714302"
-    description: "Version DOI, v3"
+    description: "Version DOI, v3, 11 September 2026."
 keywords:
   - systemic sclerosis
   - scleroderma
@@ -27,12 +27,14 @@ keywords:
   - cell type composition
   - GSE312129
 abstract: >-
-  Reprocessing of GSE312129 finds that fibroblast nuclei are recovered from
-  systemic sclerosis skin at roughly one sixth the rate of healthy skin
-  (median 6.1 versus 38.3 percent of quality controlled nuclei, exact
-  Mann-Whitney p = 0.014), in the direction opposite to the disease. The
-  asymmetry is corroborated by COL1A1 detection and is a composition confound
-  for between group comparisons drawn from this dataset. Also included is the
-  complete record of the preregistered RUNX paralog analysis that did not
-  reach its donor floor and was stopped.
+  Reprocessing of GSE312129, the only public paired multiome of systemic
+  sclerosis skin, finds that fibroblast nuclei are recovered from SSc skin at
+  roughly one sixth the rate of healthy skin, in the direction opposite to the
+  disease. The asymmetry is corroborated by COL1A1 detection and is a
+  composition confound for any between-group comparison drawn from this
+  dataset. Also included is the complete record of the preregistered RUNX
+  paralog analysis that did not reach its donor floor and was stopped.
+notes: >-
+  Author order and creator format match the Ritschel Research house convention used
+  across its Zenodo deposits.
 
